@@ -7,6 +7,7 @@
 }
 
 /* MOBILE VIEW */
+
 .App{
     background-image: url("../public/images/pattern-background-mobile.svg");
     background-position: cover;
@@ -16,12 +17,14 @@
     align-items: center;
     justify-content: center;
     font-family: 'Red Hat Display', sans-serif;
+    background-color: #D6E1FF;
   }
 
 .app__container{
     display: flex;
     flex-direction: column;
     max-width: 385px;
+    min-width: 300px;
     width: 90%;
     border-radius: 20px; 
     /* adding shadow  */
@@ -99,7 +102,9 @@
   color: hsl(245, 75%, 52%);
    font-size: 0.8rem;
    font-weight: 700;
+   cursor: pointer;
 }
+
 .body__message button{
   margin-top: 1.5rem;
   background-color: hsl(245, 75%, 52%);
@@ -112,6 +117,7 @@
   font-size: 1rem;
   /* adding shadow  */
   box-shadow: 0 16px 25px 0 hsla(245,75%,52%,0.25);
+  cursor: pointer;
 }
 
 .body__message span{
@@ -120,12 +126,20 @@
   color: hsl(224, 23%, 55%);
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 481px) {
     /* Desktop view */
+    .App{
+        background-image: url("../public/images/pattern-background-desktop.svg");
+        /* background-position: center; */
+        background-color: hsl(225, 100%, 94%);
+        background-size: contain ; 
+        background-repeat: no-repeat;
+    }
+
     .app__container{
-        /* max-width: 1000px; */
-        /* width: 80%; */
+        width: 100%;
     }
 }
